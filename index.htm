@@ -9,7 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
         body {
-            background: url('https://img.freepik.com/vetores-gratis/fundo-realista-para-celebracoes-de-festas-juninas-brasileiras_23-2150339584.jpg?semt=ais_items_boosted&w=740') no-repeat center center fixed;
+            background: url('fundo.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             display: flex;
@@ -20,7 +20,7 @@
         }
         .glass-container {
             background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(25px);
             border-radius: 15px;
             padding: 2rem;
             width: 100%;
@@ -138,8 +138,8 @@
                 // Iniciar a exibição e leitura da primeira frase
                 updateFrase();
 
-                // Configurar intervalo para alternar frases a cada 3 minutos (180000 ms)
-                intervalId = setInterval(updateFrase, 75000);
+                
+                intervalId = setInterval(updateFrase, 50000);
             });
         }
 
