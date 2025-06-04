@@ -91,9 +91,9 @@
 
         async function init() {
             // Carregar os arquivos
-            const remetentes = await loadFile('./remetente.txt');
-            const funcionarios = await loadFile('./funcionarios.txt');
-            const frases = await loadFile('./frases.txt');
+            const remetentes = await loadFile('remetente.txt');
+            const funcionarios = await loadFile('funcionarios.txt');
+            const frases = await loadFile('frases.txt');
 
             // Verificar se todos os arquivos foram carregados com sucesso
             if (remetentes.length === 0 || funcionarios.length === 0 || frases.length === 0) {
